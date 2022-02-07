@@ -38,20 +38,20 @@ const createFormPerson = (n) =>{
     });
 
     const lableTicket = createElement('label', {
-    className: 'field__label',
-    for: `ticket${n}`,
-    textContent: 'Номер билета (10 цифр)',
+        className: 'field__label',
+        for: `ticket${n}`,
+        textContent: 'Номер билета (10 цифр)',
     });
 
     const inputTicket = createElement('input', {
-    className: 'field__input',
-    id: `ticket${n}`,
-    name: 'ticket',
-    type: 'text',
-    placeholder: 'Номер билета',
-    required: true,
-    minlength: 10,
-    maxlength: 10,
+        className: 'field__input',
+        id: `ticket${n}`,
+        name: 'ticket',
+        type: 'text',
+        placeholder: 'Номер билета',
+        required: true,
+        minlength: 10,
+        maxlength: 10,
     });
 
 fieldTicket.append(lableTicket, inputTicket);
@@ -71,7 +71,7 @@ fieldTicket.append(lableTicket, inputTicket);
 
 /*  */
 
-const getFomrPerson = (count) =>{
+const getFomrPerson = (count) => {
     const forms = [];
 
     if (count > 6) count = 6;
@@ -79,6 +79,7 @@ const getFomrPerson = (count) =>{
     for (let i = 0; i < count; i++) {
         forms.push(createFormPerson(i));
     }
+
     return forms;
     
 };

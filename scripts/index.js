@@ -1,7 +1,7 @@
 import start from "./modules/start.js";
 import getFomrPerson from "./modules/formPerson.js";
 import readyPlane from "./modules/readyPlane.js";
-import getData from "./servis/getTour.js";
+import getData from "./services/getTour.js";
 
 
 const init = async (selectorApp, title) => {
